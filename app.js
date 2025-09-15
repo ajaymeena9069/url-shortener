@@ -96,8 +96,9 @@ const server = createServer(async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3002; // Render ke liye process.env.PORT, local ke liye 3002
+const HOST = "0.0.0.0"; // Render ke liye zaroori hai
 
-server.listen(PORT, "0.0.0.0", () => {
-  console.log(`Listening on PORT ${PORT}`);
+server.listen(PORT, HOST, () => {
+  console.log(`Server running on http://${HOST}:${PORT}`);
 });
