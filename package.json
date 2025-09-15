@@ -1,18 +1,18 @@
 {
-  "name": "url",
+  "name": "url-shortener",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple URL shortener built with Node.js and vanilla JS",
   "main": "app.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ajaymeena9069/url-shortener.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["url", "shortener", "nodejs", "javascript"],
+  "author": "Ajay Meena",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ajaymeena9069/url-shortener/issues"
