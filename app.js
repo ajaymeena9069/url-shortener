@@ -34,7 +34,6 @@ const saveLinks = async (links) => {
   await writeFile(DATA_FILE, JSON.stringify(links), "utf-8");
 };
 
-const PORT = 3002;
 const server = createServer(async (req, res) => {
   if (req.method === "GET") {
     if (req.url === "/") {
@@ -97,6 +96,8 @@ const server = createServer(async (req, res) => {
   }
 });
 
-server.listen(PORT, () => {
+const PORT = process.env.PORT || 3002;
+
+server.listen(PORT, "0.0.0.0", () => {
   console.log(`Listening on PORT ${PORT}`);
 });
