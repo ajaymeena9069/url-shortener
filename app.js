@@ -96,8 +96,7 @@ const server = createServer(async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 3002; 
-const HOST = "0.0.0.0"; 
+const PORT = 3002; 
 
 server.listen(PORT, HOST, () => {
   console.log(`Server running on http://${HOST}:${PORT}`);
